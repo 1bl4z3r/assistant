@@ -30,9 +30,9 @@ class Assistant(wx.Frame):
         	print(answer)
     	except:
 		try:
-       			query = query.split(' ')
-       			query = ' '.join(query[2:])
-        		print(wikipedia.summary(query))
+			query = query.split(' ')
+			query = ' '.join(query[2:])
+			print(wikipedia.summary(query))
 		except:
 			print("Cannot find {}".format(query))
 
